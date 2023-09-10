@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to top left,#0500E4, #00DFE4);
+}
+
+.columnas{
+    column-count: 3;
+    column-gap: 20px;
+}
+
+/*---------------------------------------left Cards--------------------------------------------*/
+
+.card2{
+    position: relative;
+    width: 250px;
+    height: 350px; 
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+    margin: 50px;
+}
+
+.card2 .card2_landing{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 70%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.card2 .card2_landing h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.card2 .card2_info{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+}
+
+.card2:hover .card2_info{
+    left: -460px;
+}
+
+.card2_info .head2{
+    padding: 5px;
+    border-bottom: solid 1px #bc8811;
+}
+
+.card2_info .head2 .title2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #bc8811;
+}
+
+.card2_info .content2{
+    margin-top: 15px;
+}
+
+.card2_info .content2 .list2{
+    padding: 10px 15px;
+}
+
+.card2_info .content2 .list2 li{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/*---------------------------------------right Cards--------------------------------------------*/
+
+.card1{
+    position: relative;
+    
+    width: 250px;
+    height: 350px; 
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+    margin: 50px;
+}
+
+.card1 .card1_landing{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 70%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.card1 .card1_landing h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.card1 .card1_info{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: #fff;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: .5s;
+}
+
+.card1:hover .card1_info{
+    left: 100%;
+}
+
+.card1_info .head{
+    padding: 5px;
+    border-bottom: solid 1px #bc8811;
+}
+
+.card1_info .head .title{
+    font-size: 20px;
+    font-weight: 700;
+    color: #bc8811;
+}
+
+.card1_info .content1{
+    margin-top: 15px;
+}
+
+.card1_info .content1 .list{
+    padding: 10px 15px;
+}
+
+.card1_info .content1 .list li{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/*-------------------------------------------Perfil-------------------------------------------*/
+
+.card{
+    
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+    margin: 40px;
+}
+
+.card .content{
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+}
+.card .content .img{
+    height: 50%;
+    margin-bottom: 20px;
+
+}
+
+.card .content .img img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.8);
+}
+
+.card .content span{
+    position: absolute;
+    width: 350px;
+    height: 180px;
+    background: linear-gradient(to right, #1600E4, #00CEE4);
+    transform: rotate(-35deg);
+    top: -50px;
+    left: -100px;
+}
+
+.card .content h4{
+    font-size: 20px;
+    color: #1a1919 ;
+    margin-bottom: 5px;
+}
+
+.card .content h6{
+    font-size: 14px;
+    color: #5e2066;
+}
+
+.card .content p{
+    font-size: 14px;
+    color: #1a161f;
+    margin-top: 10px;
+}
+
+.card .links {
+    position: absolute;
+    z-index: 90;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(155, 155, 155, 0.5);
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+    padding: 20px;
+    align-items: center;
+    right: 10px;
+    top: 15px;
+    transition: .5s;
+}
+
+.card:hover .links{
+    right: -50px;
+    border-radius: 0 10px 10px 0;
+}
+
+.card .links a{
+    font-size: 20px;
+    color: #000000;
+}
+
+.card .links a:nth-child(1):hover{
+    color: #12C100;
+    transition: .3s;
+}
+
+.card .links a:nth-child(2):hover{
+    color: #E4D900;
+    transition: .3s;
+}
+
+.card .links a:nth-child(3):hover{
+    color: #E40000;
+    transition: .3s;
+}
+
+.card .links a:nth-child(4):hover{
+    color: #3CF6F5;
+    transition: .3s;
+}
